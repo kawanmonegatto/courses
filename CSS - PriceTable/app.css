@@ -1,0 +1,113 @@
+body {
+    background-color: #00aeff;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.pricing-table {
+    width: 100%;
+    max-width: 70%;
+    height: 100%;
+    max-height: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    /* [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color] */
+    box-shadow: 0 0 3px #000000;
+}
+
+.pricing-plan {
+    width: 30%;
+    /* top and bottom | left and right */
+    margin: 0.5rem auto;
+    /* Apply to all four sides */
+    padding: calc(9%/3);
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-plan:nth-of-type(2) {
+    border-left: solid hsl(255, 10%, 95%);
+    border-right: solid hsl(255, 10%, 95%);
+    border-width: 0.1em;
+}
+
+.pricing-img {
+    width: 10rem;
+    height: 6rem;
+    /* Apply to all four sides */
+    margin: 10px;
+}
+
+h2 {
+    color: #CBB2B2;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* top | right | bottom | left */
+    margin: 5px 0 10px 0;
+}
+
+.pricing-header {
+    text-align: center;
+}
+
+.pricing-features {
+    list-style-type: none;
+    font-family: inherit;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #00aeff;
+    font-weight: 800;
+    font-size: 0.7em;
+    padding: 0px;
+}
+
+.pricing-features-item {
+    margin: 0px;
+    padding: 10px;
+    border-bottom: solid;
+    border-color: hsl(255, 10%, 95%);
+    border-width: 0.2em;
+    text-align: center;
+}
+
+.pricing-features-item:first-of-type {
+    border-top-style: solid;
+}
+
+.pricing-price {
+    margin: 0.2em 0px;
+    font-family: inherit;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #0D04EE;
+    font-weight: 800;
+}
+
+.pricing-button {
+    margin: 0.2em 0px;
+    border: 0.2em solid hsl(255, 10%, 95%);
+    border-radius: 8px;
+    /* top and bottom | left and right */
+    padding: 0.5em 2em;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    font-size: 0.8em;
+}
+
+.is-featured {
+    border: solid #00aeff;
+    background-color: #00aeff;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 818px) {
+    .pricing-table {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
